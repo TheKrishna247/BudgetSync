@@ -1,2 +1,2 @@
 # BudgetSync
-A modern personal finance dashboard that helps users manage expenses, budgets, savings, and investments from a single interface. It provides insightful analytics, interactive charts, and financial reports for smarter money management.
+A modern personal finance management platform designed to help users track expenses, manage budgets, monitor savings, and organize investments from a unified dashboard. It provides interactive financial analytics, visual spending insights, transaction management, budget tracking, and financial reports to help users understand their financial habits and make informed money-management decisions.
