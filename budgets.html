@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgets | BudgetSync</title>
+    <link rel="stylesheet" href="budgets.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">₹</div>
+                <div>
+                    Budget<span>Sync</span>
+                </div>
+            </div>
+
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="transactions.html">Transactions</a>
+                <a href="budgets.html" class="active">Budgets</a>
+                <a href="savings.html">Savings Goals</a>
+                <a href="investments.html">Investments</a>
+                <a href="reports.html">Reports</a>
+                <a href="categories.html">Categories</a>
+                <a href="notification.html">Notifications</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div>
+                    <h1>Budgets</h1>
+                    <p>Set and track your spending limits</p>
+                </div>
+
+                <div class="user-section">
+                    <button>This Month</button>
+                    <span>Krishna</span>
+                    <div class="user-icon">K</div>
+                </div>
+            </header>
+
+            <section class="budget-summary">
+                <div class="summary-card">
+                    <p>Total Budget</p>
+                    <h2>₹30,000</h2>
+                </div>
+
+                <div class="summary-card">
+                    <p>Total Spent</p>
+                    <h2 class="expense">₹18,420</h2>
+                </div>
+
+                <div class="summary-card">
+                    <p>Remaining</p>
+                    <h2 class="balance">₹11,580</h2>
+                </div>
+
+                <button class="add-budget-button">+ Add Budget</button>
+            </section>
+
+            <section class="budget-grid">
+                <div class="budget-card">
+                    <div class="budget-header">
+                        <div>
+                            <h3>Food</h3>
+                            <p>₹4,200 spent of ₹6,000</p>
+                        </div>
+                        <span class="status within">Within Limit</span>
+                    </div>
+
+                    <div class="budget-amount">
+                        <strong>₹4,200</strong>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar food-progress"></div>
+                    </div>
+
+                    <div class="budget-footer">
+                        <span>Budget Limit</span>
+                        <strong>₹6,000</strong>
+                    </div>
+                </div>
+
+                <div class="budget-card">
+                    <div class="budget-header">
+                        <div>
+                            <h3>Transport</h3>
+                            <p>₹2,700 spent of ₹3,000</p>
+                        </div>
+                        <span class="status nearing">Nearing Limit</span>
+                    </div>
+
+                    <div class="budget-amount">
+                        <strong>₹2,700</strong>
+                        <span>90%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar transport-progress"></div>
+                    </div>
+
+                    <div class="budget-footer">
+                        <span>Budget Limit</span>
+                        <strong>₹3,000</strong>
+                    </div>
+                </div>
+
+                <div class="budget-card">
+                    <div class="budget-header">
+                        <div>
+                            <h3>Entertainment</h3>
+                            <p>₹2,200 spent of ₹2,500</p>
+                        </div>
+                        <span class="status nearing">Nearing Limit</span>
+                    </div>
+
+                    <div class="budget-amount">
+                        <strong>₹2,200</strong>
+                        <span>88%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar entertainment-progress"></div>
+                    </div>
+
+                    <div class="budget-footer">
+                        <span>Budget Limit</span>
+                        <strong>₹2,500</strong>
+                    </div>
+                </div>
+
+                <div class="budget-card">
+                    <div class="budget-header">
+                        <div>
+                            <h3>Shopping</h3>
+                            <p>₹5,820 spent of ₹5,000</p>
+                        </div>
+                        <span class="status over">Over Budget</span>
+                    </div>
+
+                    <div class="budget-amount">
+                        <strong class="expense">₹5,820</strong>
+                        <span class="expense">116%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar shopping-progress"></div>
+                    </div>
+
+                    <div class="budget-footer">
+                        <span>Budget Limit</span>
+                        <strong>₹5,000</strong>
+                    </div>
+                </div>
+
+                <div class="budget-card">
+                    <div class="budget-header">
+                        <div>
+                            <h3>Bills</h3>
+                            <p>₹3,500 spent of ₹4,500</p>
+                        </div>
+                        <span class="status within">Within Limit</span>
+                    </div>
+
+                    <div class="budget-amount">
+                        <strong>₹3,500</strong>
+                        <span>78%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bills-progress"></div>
+                    </div>
+
+                    <div class="budget-footer">
+                        <span>Budget Limit</span>
+                        <strong>₹4,500</strong>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

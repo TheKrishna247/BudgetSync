@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0C0E11;
+    color: #E8ECEA;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 15vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #08090B;
+    border-right: 1px solid #262B32;
+    padding: 3vh 1vw;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+    margin-bottom: 4vh;
+    font-size: 1.7vw;
+    font-weight: bold;
+    color: #E8ECEA;
+}
+
+.logo span {
+    color: #6FA3FF;
+}
+
+.logo-icon {
+    background-color: #2E6BE6;
+    color: #FFFFFF;
+    padding: 0.7vh 0.8vw;
+    border-radius: 5px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 2.6vh 0.7vw;
+    color: #8E98A5;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border-radius: 5px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background-color: #1B1F24;
+    color: #8DB8FF;
+    border-left: 2px solid #8DB8FF;
+}
+
+.main-content {
+    margin-left: 15vw;
+    width: 85vw;
+    padding: 3vh 2vw;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5vh;
+}
+
+.top-bar h1 {
+    font-size: 3vw;
+}
+
+.top-bar p {
+    margin-top: 0.6vh;
+    color: #8E98A5;
+    font-size: 1vw;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.15vw;
+    color: #8E98A5;
+}
+
+.user-section button {
+    background-color: #13161A;
+    color: #8E98A5;
+    border: 1px solid #262B32;
+    padding: 1.1vh 0.9vw;
+    border-radius: 5px;
+    font-size: 1.05vw;
+}
+
+.user-icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #153A80;
+    color: #8DB8FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15vw;
+}
+
+.settings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+
+.settings-card {
+    background-color: #13161A;
+    border: 1px solid #262B32;
+    border-radius: 7px;
+    padding: 2.2vh 1.5vw;
+}
+
+.settings-card h3 {
+    font-size: 1.2vw;
+    margin-bottom: 0.6vh;
+}
+
+.section-description {
+    color: #8E98A5;
+    font-size: 0.9vw;
+    margin-bottom: 2vh;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 2vh;
+}
+
+.profile-photo {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: #153A80;
+    color: #8DB8FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+}
+
+.change-photo {
+    padding: 0.8vh 0.9vw;
+    background-color: transparent;
+    border: 1px solid #262B32;
+    border-radius: 5px;
+    color: #8DB8FF;
+    font-size: 0.8vw;
+    cursor: pointer;
+}
+
+.change-photo:hover {
+    border-color: #6FA3FF;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vh;
+    margin-bottom: 1.5vh;
+}
+
+.form-group label {
+    color: #E8ECEA;
+    font-size: 0.9vw;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 5.5vh;
+    padding: 0 1vw;
+    background-color: #0C0E11;
+    border: 1px solid #262B32;
+    border-radius: 5px;
+    color: #E8ECEA;
+    font-size: 0.9vw;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2E6BE6;
+}
+
+.secondary-button {
+    height: 4.5vh;
+    padding: 0 1.2vw;
+    background-color: transparent;
+    border: 1px solid #262B32;
+    border-radius: 5px;
+    color: #8DB8FF;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+
+.secondary-button:hover {
+    border-color: #6FA3FF;
+    background-color: #1B1F24;
+}
+
+.delete-button {
+    height: 4.5vh;
+    padding: 0 1.2vw;
+    background-color: transparent;
+    border: 1px solid rgba(226, 109, 90, 0.45);
+    border-radius: 5px;
+    color: #E26D5A;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: rgba(226, 109, 90, 0.08);
+}
+
+.save-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5vh;
+}
+
+.save-button {
+    height: 4.5vh;
+    padding: 0 1.4vw;
+    background-color: #2E6BE6;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #2459C5;
+}
