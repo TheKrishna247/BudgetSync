@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transactions | BudgetSync</title>
+        <link rel="stylesheet" href="transactions.css">
+    </head>
+    <body>
+
+        <div class="dashboard">
+
+            <aside class="sidebar">
+
+                <div class="logo">
+                    <div class="logo-icon">₹</div>
+                    <div>
+                        Budget<span>Sync</span>
+                    </div>
+                </div>
+                <nav>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="transactions.html" class="active">Transactions</a>
+                    <a href="budgets.html">Budgets</a>
+                    <a href="savings-goals.html">Savings Goals</a>
+                    <a href="investments.html">Investments</a>
+                    <a href="reports.html">Reports</a>
+                    <a href="categories.html">Categories</a>
+                    <a href="notification.html">Notifications</a>
+                    <a href="settings.html">Settings</a>
+                </nav>
+            </aside>
+            <main class="main-content">
+
+                <header class="top-bar">
+                    <div>
+                        <h1>Transactions</h1>
+                        <p>Manage and track your income and expenses</p>
+                    </div>
+
+                    <div class="user-section">
+                        <button>This Month</button>
+                        <span>Krishna</span>
+                        <div class="user-icon">K</div>
+                    </div>
+                </header>
+
+                <section class="transaction-top">
+
+                    <div class="summary-card">
+                        <p>Total Income</p>
+                        <h2 class="income">₹35,000</h2>
+                    </div>
+
+                    <div class="summary-card">
+                        <p>Total Expenses</p>
+                        <h2 class="expense">₹24,680</h2>
+                    </div>
+
+                    <div class="summary-card">
+                        <p>Balance</p>
+                        <h2 class="balance">₹10,320</h2>
+                    </div>
+
+                    <a href="add-transaction.html" class="add-button">+ Add Transaction</a>
+
+                </section>
+
+                <section class="filters">
+
+                    <input type="text" placeholder="Search transactions">
+
+                    <select>
+                        <option>All Types</option>
+                        <option>Income</option>
+                        <option>Expense</option>
+                    </select>
+
+                    <select>
+                        <option>All Categories</option>
+                        <option>Food</option>
+                        <option>Bills</option>
+                        <option>Shopping</option>
+                        <option>Entertainment</option>
+                        <option>Transport</option>
+                    </select>
+
+                </section>
+
+                <section class="transaction-table">
+
+                    <div class="table-header">
+                        <span>Date</span>
+                        <span>Description</span>
+                        <span>Category</span>
+                        <span>Type</span>
+                        <span>Amount</span>
+                    </div>
+
+                    <div class="table-row">
+                        <span>08 Oct 2026</span>
+                        <span>McDonald's</span>
+                        <span>Food</span>
+                        <span class="expense">Expense</span>
+                        <strong class="expense">-₹450</strong>
+                    </div>
+
+                    <div class="table-row">
+                        <span>07 Oct 2026</span>
+                        <span>Uber</span>
+                        <span>Transport</span>
+                        <span class="expense">Expense</span>
+                        <strong class="expense">-₹120</strong>
+                    </div>
+
+                    <div class="table-row">
+                        <span>05 Oct 2026</span>
+                        <span>Amazon</span>
+                        <span>Shopping</span>
+                        <span class="expense">Expense</span>
+                        <strong class="expense">-₹1,200</strong>
+                    </div>
+
+                    <div class="table-row">
+                        <span>03 Oct 2026</span>
+                        <span>Electricity Bill</span>
+                        <span>Bills</span>
+                        <span class="expense">Expense</span>
+                        <strong class="expense">-₹2,500</strong>
+                    </div>
+
+                    <div class="table-row">
+                        <span>01 Oct 2026</span>
+                        <span>Salary</span>
+                        <span>Income</span>
+                        <span class="income">Income</span>
+                        <strong class="income">+₹35,000</strong>
+                    </div>
+
+                    <div class="table-row">
+                        <span>28 Sep 2026</span>
+                        <span>Netflix</span>
+                        <span>Entertainment</span>
+                        <span class="expense">Expense</span>
+                        <strong class="expense">-₹649</strong>
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </body>
+</html>

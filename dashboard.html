@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | BudgetSync</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">₹</div>
+                <div>
+                    Budget<span>Sync</span>
+                </div>
+            </div>
+            <nav>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="transactions.html">Transactions</a>
+                <a href="budget.html">Budgets</a>
+                <a href="savings.html">Savings Goals</a>
+                <a href="investments.html">Investments</a>
+                <a href="report.html">Reports</a>
+                <a href="categories.html">Categories</a>
+                <a href="notification.html">Notifications</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="top-bar">
+                <h1>Dashboard</h1>
+                <div class="user-section">
+                    <button>This Month</button>
+                    <span>Krishna</span>
+                    <div class="user-icon">K</div>
+                </div>
+            </header>
+
+            <section class="summary-cards">
+                <div class="card">
+                    <p>Total Income</p>
+                    <h2>₹35,000</h2>
+                </div>
+
+                <div class="card">
+                    <p>Total Expenses</p>
+                    <h2 class="expense">₹24,680</h2>
+                </div>
+
+                <div class="card">
+                    <p>Total Savings</p>
+                    <h2 class="income">₹10,320</h2>
+                </div>
+
+                <div class="card">
+                    <p>Current Balance</p>
+                    <h2 class="balance">₹10,320</h2>
+                </div>
+            </section>
+
+            <section class="charts">
+                <div class="card chart-card">
+                    <h3>Income vs Expenses</h3>
+                    <p>Last 6 months</p>
+
+                    <div class="bar-chart">
+                        <div class="month">
+                            <div class="bars">
+                                <span class="income-bar" style="height: 70px;"></span>
+                                <span class="expense-bar" style="height: 50px;"></span>
+                            </div>
+                            <small>Mar</small>
+                        </div>
+
+                        <div class="month">
+                            <div class="bars">
+                                <span class="income-bar" style="height: 80px;"></span>
+                                <span class="expense-bar" style="height: 55px;"></span>
+                            </div>
+                            <small>Apr</small>
+                        </div>
+
+                        <div class="month">
+                            <div class="bars">
+                                <span class="income-bar" style="height: 60px;"></span>
+                                <span class="expense-bar" style="height: 45px;"></span>
+                            </div>
+                            <small>May</small>
+                        </div>
+
+                        <div class="month">
+                            <div class="bars">
+                                <span class="income-bar" style="height: 85px;"></span>
+                                <span class="expense-bar" style="height: 65px;"></span>
+                            </div>
+                            <small>Jun</small>
+                        </div>
+
+                        <div class="month">
+                            <div class="bars">
+                                <span class="income-bar" style="height: 90px;"></span>
+                                <span class="expense-bar" style="height: 70px;"></span>
+                            </div>
+                            <small>Jul</small>
+                        </div>
+
+                        <div class="month">
+                            <div class="bars">
+                                <span class="income-bar" style="height: 95px;"></span>
+                                <span class="expense-bar" style="height: 65px;"></span>
+                            </div>
+                            <small>Aug</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card chart-card">
+                    <h3>Spending by Category</h3>
+                    <p>This month</p>
+
+                    <div class="category-chart">
+                        <div class="donut"></div>
+                        <div class="legend">
+                             
+                            <span><i class="bills"></i>Bills</span>
+                            <span><i class="shopping"></i>Shopping</span>
+                            <span><i class="entertainment"></i>Entertainment</span>
+                            <span><i class="transport"></i>Transport</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ml-card">
+                <div>
+                    <h3>Smart Financial Insights (ML)</h3>
+                    <p>AI-powered insights based on your spending behaviour: expense prediction, anomaly detection and personalized recommendations.</p>
+                </div>
+                <span>Coming Soon</span>
+            </section>
+
+            <section class="bottom-section">
+
+                <div class="card">
+                    <div class="section-heading">
+                        <h3>Recent Transactions</h3>
+                        <a href="transactions.html">View All</a>
+                    </div>
+
+                    <div class="transaction">
+                        <span>McDonald's · Food</span>
+                        <strong class="expense">-₹450</strong>
+                    </div>
+
+                    <div class="transaction">
+                        <span>Uber · Transport</span>
+                        <strong class="expense">-₹120</strong>
+                    </div>
+
+                    <div class="transaction">
+                        <span>Salary · Income</span>
+                        <strong class="income">+₹35,000</strong>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Budget Overview</h3>
+
+                    <div class="progress-info">
+                        <span>Overall 72% used</span>
+                        <span>₹24,680 / ₹35,000</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="budget-progress"></div>
+                    </div>
+
+                    <h3 class="goal-title">Savings Goals</h3>
+
+                    <div class="progress-info">
+                        <span>Overall 40% completed</span>
+                        <span>₹80,000 / ₹2,00,000</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="goal-progress"></div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

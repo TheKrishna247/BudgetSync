@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-Transaction | BudgetSync</title>
+    <link rel="stylesheet" href="add-transaction.css">
+</head>
+<body>
+    <div class="transaction-overlay">
+        <div class="add-transaction-container">
+            <h1>Add Transaction</h1>
+            <form class="transaction-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="type">Transaction Type</label>
+                        <select name="type" id="type">
+                            <option value="expense">Expense</option>
+                            <option value="income">Income</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" name="amount" placeholder="₹ 0.00">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" name="description" placeholder="Enter description">
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select name="category" id="category">
+                        <option value="">Select Category</option>
+                        <option value="food">Food</option>
+                        <option value="transport">Transport</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="bills">Bills</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="ml-suggestion">
+                    <div class="ml-content">
+                        <h3>Suggested Category (ML)</h3>
+                        <p>Based on your description</p>
+                    </div>
+
+                    <div class="ml-result">
+                        <span>Food (80% confidence)</span>
+                        <button type="button" class="suggestion-button">Use suggestion</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="text" id="date" name="date" placeholder="dd/mm/yyyy">
+                </div>
+
+                <div class="form-action">
+                    <button type="button" class="cancel-button">Cancel</button>
+                    <button type="submit" class="add-button">Add Transaction</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    font-family:Arial,sans-serif;
+    background-color:#0C0E11;
+    color:#E8ECEA;
+}
+.transaction-overlay{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#0C0E11;
+}
+.add-transaction-container{
+    width:55vw;
+    background-color:#1B1F23;
+    border:1px solid #292E33;
+    border-radius:1vw;
+    padding:3vh 2.5vw;
+}
+.add-transaction-container h1{
+    margin-bottom:2vh;
+    color:#E8ECEA;
+    font-family:Georgia,serif;
+    font-size:2vw;
+}
+.transaction-form{
+    display:flex;
+    flex-direction:column;
+    gap:1.8vh;
+}
+.form-row{
+    display:flex;
+    gap:1vw;
+}
+.form-row .form-group{
+    width:50%;
+}
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:0.7vh;
+}
+.form-group label{
+    color:#E8ECEA;
+    font-size:1.1vw;
+}
+.form-group input,
+.form-group select{
+    width:100%;
+    height:6vh;
+    padding:0 1vw;
+    background-color:#0C0E11;
+    border:1px solid #292E33;
+    border-radius:0.7vw;
+    color:#E8ECEA;
+    font-size:1.1vw;
+    outline:none;
+}
+.form-group input::placeholder{
+    color:#69747F;
+}
+.form-group select{
+    cursor:pointer;
+}
+.form-group input:focus,
+.form-group select:focus{
+    border-color:#316EE8;
+}
+.ml-suggestion{
+    padding:2vh 1.5vw;
+    background-color:#1B1F24;
+    border:1px solid #262B32;
+    border-radius:0.8vw;
+}
+.ml-content h3{
+    color:#D4AF5F;
+    font-size:1.1vw;
+}
+.ml-content p{
+    margin-top:0.3vh;
+    color:#8E98A5;
+    font-size:1vw;
+}
+.ml-result{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:2.5vh;
+}
+.ml-result span{
+    color:#E8ECEA;
+    font-size:1.1vw;
+}
+.suggestion-button{
+    padding:1.2vh 1.2vw;
+    background-color:transparent;
+    border:1px solid #D4AF5F;
+    border-radius:0.7vw;
+    color:#D4AF5F;
+    font-size:1vw;
+    cursor:pointer;
+}
+.suggestion-button:hover{
+    background-color:#29291F;
+}
+.form-action{
+    display:flex;
+    justify-content:flex-end;
+    gap:1vw;
+    margin-top:0.5vh;
+}
+.cancel-button{
+    height:6vh;
+    padding:0 1.5vw;
+    background-color:transparent;
+    border:1px solid #292E33;
+    border-radius:0.7vw;
+    color:#8E98A5;
+    font-size:1vw;
+    cursor:pointer;
+}
+.cancel-button:hover{
+    background-color:#1B1F23;
+    color:#E8ECEA;
+}
+.add-button{
+    height:6vh;
+    padding:0 1.5vw;
+    background-color:#316EE8;
+    border:none;
+    border-radius:0.7vw;
+    color:#FFFFFF;
+    font-size:1vw;
+    cursor:pointer;
+}
+.add-button:hover{
+    background-color:#285FCF;
+}
