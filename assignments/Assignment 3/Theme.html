@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Changer</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: white;
+            color: black;
+            transition: 0.3s;
+        }
+        .container {
+            padding: 30px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        #light {
+            background-color: #eeeeee;
+            color: black;
+        }
+        #dark {
+            background-color: #222222;
+        }
+        #blue {
+            background-color: #007bff;
+        }
+        #green {
+            background-color: #198754;
+        }
+        .light-theme {
+            background-color: white;
+            color: black;
+        }
+        .dark-theme {
+            background-color: #222222;
+            color: white;
+        }
+        .blue-theme {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+        .green-theme {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+    </style>
+</head>
+
+<body class="light-theme">
+
+    <div class="container">
+        <h1>Color Theme Changer</h1>
+        <p>Select a theme for this page.</p>
+
+        <button id="light" onclick="changeTheme('light-theme')">
+            Light Theme
+        </button>
+
+        <button id="dark" onclick="changeTheme('dark-theme')">
+            Dark Theme
+        </button>
+
+        <button id="blue" onclick="changeTheme('blue-theme')">
+            Blue Theme
+        </button>
+
+        <button id="green" onclick="changeTheme('green-theme')">
+            Green Theme
+        </button>
+
+        <h2>Welcome!</h2>
+        <p>The page colors change when you select a theme.</p>
+    </div>
+
+    <script>
+        function changeTheme(themeName) {
+            document.body.className = themeName;
+        }
+    </script>
+
+</body>
+</html>

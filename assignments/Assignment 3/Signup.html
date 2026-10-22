@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 320px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input:not([type="checkbox"]) {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+
+        #success {
+            color: green;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+
+        <form id="signupForm">
+            <input type="text" id="name" placeholder="Full Name">
+            <div class="error" id="nameError"></div>
+
+            <input type="text" id="email" placeholder="Email Address">
+            <div class="error" id="emailError"></div>
+
+            <input type="password" id="password" placeholder="Password">
+            <div class="error" id="passwordError"></div>
+
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <div class="error" id="confirmError"></div>
+
+            <p>
+                <input type="checkbox" id="terms">
+                I accept the terms and conditions.
+            </p>
+            <div class="error" id="termsError"></div>
+            <br>
+            <button type="submit">Create Account</button>
+            <p id="success"></p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            let terms = document.getElementById("terms").checked;
+
+            let isValid = true;
+
+            // Clear previous messages
+            document.querySelectorAll(".error").forEach(function(element) {
+                element.textContent = "";
+            });
+            document.getElementById("success").textContent = "";
+
+            // Name validation
+            if (name.length < 3) {
+                document.getElementById("nameError").textContent =
+                    "Name must contain at least 3 characters.";
+                isValid = false;
+            }
+
+            // Email validation
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(email)) {
+                document.getElementById("emailError").textContent =
+                    "Enter a valid email address.";
+                isValid = false;
+            }
+
+            // Password validation
+            if (password.length < 8) {
+                document.getElementById("passwordError").textContent =
+                    "Password must contain at least 8 characters.";
+                isValid = false;
+            }
+
+            // Confirm password validation
+            if (confirmPassword !== password || confirmPassword === "") {
+                document.getElementById("confirmError").textContent =
+                    "Passwords do not match.";
+                isValid = false;
+            }
+
+            // Terms validation
+            if (!terms) {
+                document.getElementById("termsError").textContent =
+                    "Please accept the terms and conditions.";
+                isValid = false;
+            }
+
+            // Final result
+            if (isValid) {
+                document.getElementById("success").textContent =
+                    "Signup successful!";
+                document.getElementById("signupForm").reset();
+            }
+        });
+    </script>
+</body>
+</html>
